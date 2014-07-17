@@ -1,0 +1,13 @@
+def happynum(num):
+    sum = 0
+    a = str(num)
+	while sum != 1:
+		sum = 0
+		for numbr in a:
+			integer = (int(numbr))**2
+			sum = integer + sum
+		a = str(sum)
+		print(sum)
+	
+if __name__ == "__main__":
+	happynum(input("Insert an integer here: "))
