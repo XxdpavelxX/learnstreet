@@ -23,3 +23,6 @@ def string_rot13(str):
 			total.append(chr(a))   #all regular letters that do not go below or above alphabet value
 	ans = ''.join(total)
     return ans
+    
+if __name__ == "__main__":
+	string_rot13(input("Input the text to be coded, include quotation marks at begining and end of text please:"))
